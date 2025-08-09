@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('slug');
-            // Removed the redundant 'status' string column
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->foreignId('priority_id')->constrained('todolist_priorities')->cascadeOnUpdate()->restrictOnDelete();
             $table->foreignId('status_id')->constrained('todolist_statuses')->cascadeOnUpdate()->restrictOnDelete();

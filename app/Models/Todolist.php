@@ -15,6 +15,7 @@ class Todolist extends Model
         'description',
         'status_id',
         'slug',
+        'due_date',
         'user_id',
         'priority_id',
     ];
