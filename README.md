@@ -32,13 +32,19 @@ npm install
 ```
 
 
-## Development
-```shell script
-# Run Laravel server
-php artisan serve
+## Running the App
 
-# Run dev build with HMR
+You can start the development server and asset compiler separately:
+
+```bash
+php artisan serve
 npm run dev
+```
+
+**Or**, you can run both commands simultaneously with one command:
+
+```bash
+composer run dev
 ```
 
 
