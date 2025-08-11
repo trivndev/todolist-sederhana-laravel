@@ -16,10 +16,10 @@ class TodolistSeeder extends Seeder
      */
     public function run(): void
     {
-        Todolist::factory(100)->recycle([
+        Todolist::factory(1000)->recycle([
+            User::all(),
             TodolistStatus::all(),
             TodolistPriority::all(),
-            User::all()
         ])->create();
     }
 }

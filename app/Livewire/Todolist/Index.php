@@ -16,10 +16,10 @@ class Index extends Component
     #[Computed()]
     public function todolists()
     {
-        return Todolist::latest()->paginate(12)->where('user_id', auth()->id());
+        return Todolist::latest()->where('user_id', auth()->id())->paginate(12);
     }
 
-    public function render()
+    public function render()    
     {
         return view('livewire.todolist.index');
     }

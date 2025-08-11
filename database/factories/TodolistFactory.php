@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\TodolistPriority;
+use App\Models\TodolistStatus;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
@@ -23,8 +25,8 @@ class TodolistFactory extends Factory
             'title' => $title,
             'slug' => Str::slug($title),
             'description' => fake()->paragraph(2, 6),
-            'priority_id' => fake()->numberBetween(1, 3),
-            'status_id' => fake()->numberBetween(1, 5),
+            'priority_id' => TodolistPriority::factory(),
+            'status_id' => TodolistStatus::factory(),
             'user_id' => User::factory(),
         ];
     }

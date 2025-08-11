@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
 //        ]);
 
         $this->call([
+            UserSeeder::class,
             TodolistStatusSeeder::class,
             TodolistPrioritySeeder::class,
             TodolistSeeder::class,
