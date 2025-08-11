@@ -8,6 +8,12 @@ A focused to‑do app to capture and organize tasks with titles, descriptions, p
 - Modal-driven input and toast feedback
 - Responsive UI with pagination
 
+## Tech Stack 💻
+- Laravel
+- Livewire
+- FluxUI
+- Tailwind
+
 ## Prerequisites
 - PHP >= 8.2, Composer
 - Node.js >= 20, npm
