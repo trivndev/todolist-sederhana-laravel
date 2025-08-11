@@ -9,10 +9,10 @@ A focused to‑do app to capture and organize tasks with titles, descriptions, p
 - Responsive UI with pagination
 
 ## Tech Stack 💻
-- Laravel
-- Livewire
-- FluxUI
-- Tailwind
+- [Laravel](https://laravel.com)
+- [Livewire](https://livewire.laravel.com)
+- [FluxUI](https://fluxui.dev)
+- [Tailwind](https://tailwindcss.com)
 
 ## Prerequisites
 - PHP >= 8.2, Composer
