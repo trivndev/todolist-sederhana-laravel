@@ -61,6 +61,3 @@ php artisan test
 - Set APP_ENV=production and APP_DEBUG=false
 - Run migrations and assets build on the server
 - Configure queue/cache/session drivers as needed
-
-## License
-Distributed under the <your-license> license.
