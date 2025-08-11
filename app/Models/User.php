@@ -60,7 +60,7 @@ class User extends Authenticatable
             ->implode('');
     }
 
-    public function todolists()
+    public function todolist()
     {
         return $this->hasMany(Todolist::class);
     }

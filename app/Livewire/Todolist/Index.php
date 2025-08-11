@@ -16,7 +16,7 @@ class Index extends Component
     #[Computed()]
     public function todolists()
     {
-        return Todolist::latest()->paginate(12);
+        return Todolist::latest()->paginate(12)->where('user_id', auth()->id());
     }
 
     public function render()
