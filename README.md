@@ -55,15 +55,3 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 ```
-
-
-## Testing
-```shell script
-php artisan test
-```
-
-
-## Deployment
-- Set APP_ENV=production and APP_DEBUG=false
-- Run migrations and assets build on the server
-- Configure queue/cache/session drivers as needed
