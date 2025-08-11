@@ -9,10 +9,10 @@
             autoplay>
         </lottie-player>
         <h1 id="greetingsToUser"
-            class="text-center text-2xl font-medium transition-all duration-300 sm:text-2xl md:text-3xl"></h1>
+            class="text-center text-2xl font-medium transition-all duration-300 ease-in-out sm:text-2xl md:text-3xl"></h1>
         <div class="flex items-center opacity-0 transition-all duration-300" id="greetings">
             <flux:text id="greetingsText"
-                       class="text-center text-lg font-medium transition-all duration-300 sm:text-xl md:text-2xl"></flux:text>
+                       class="text-center text-lg font-medium transition-all duration-300 ease-in-out sm:text-xl md:text-2xl"></flux:text>
             <lottie-player id="running-animation"
                            src="https://lottie.host/19a9f84e-2a62-47fc-92ed-478ef3628cdc/5jjVPn7Jbd.json"
                            background="transparent"
@@ -35,7 +35,7 @@
             const withCursor = window.innerWidth < 640;
             new TypeIt("#greetingsToUser", {
                 strings: [
-                    "Welcome, {{ Auth::user()->name }} 😀"
+                    "Welcome, {{ ucfirst(strtolower(Auth::user()->name)) }} 😀"
                 ],
                 breakLines: false,
                 waitUntilVisible: true,

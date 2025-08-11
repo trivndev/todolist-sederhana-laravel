@@ -10,7 +10,6 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @fluxAppearance
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-
 </head>
 
 <body>
@@ -25,10 +24,10 @@
     </flux:navbar>
     <flux:spacer/>
     <flux:dropdown position="top" align="start">
-        <flux:profile :chevron="false" avatar:name="{{ Auth::user()->name }}"/>
+        <flux:profile :chevron="false" avatar:name="{{ ucfirst(strtolower(Auth::user()->name)) }}"/>
         <flux:menu>
             <flux:navlist.group class="px-3 py-1">
-                <flux:heading>{{ Auth::user()->name }}</flux:heading>
+                <flux:heading>{{ ucfirst(strtolower(Auth::user()->name)) }}</flux:heading>
                 <flux:text>{{ Auth::user()->email }}</flux:text>
             </flux:navlist.group>
             <flux:menu.separator/>
@@ -77,7 +76,7 @@
 
 @fluxScripts
 <script type="module">
-    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+    import {DotLottie} from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
 
     new DotLottie({
         autoplay: true,
@@ -89,5 +88,4 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
 </body>
-
 </html>

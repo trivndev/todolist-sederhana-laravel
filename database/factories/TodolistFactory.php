@@ -26,7 +26,6 @@ class TodolistFactory extends Factory
             'slug' => Str::slug($title),
             'description' => fake()->paragraph(2, 6),
             'priority_id' => TodolistPriority::factory(),
-            'status_id' => TodolistStatus::factory(),
             'user_id' => User::factory(),
         ];
     }

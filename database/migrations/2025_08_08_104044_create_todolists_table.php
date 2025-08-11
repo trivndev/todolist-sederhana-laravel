@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('slug');
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->foreignId('priority_id')->constrained('todolist_priorities')->cascadeOnUpdate()->restrictOnDelete();
-            $table->foreignId('status_id')->constrained('todolist_statuses')->cascadeOnUpdate()->restrictOnDelete();
+            $table->foreignId('status_id')->default(1)->constrained('todolist_statuses')->cascadeOnUpdate()->restrictOnDelete();
             $table->timestamps();
             $table->index(['priority_id', 'status_id', 'user_id']);
         });
