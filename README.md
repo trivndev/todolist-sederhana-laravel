@@ -15,7 +15,7 @@ A focused to‑do app to capture and organize tasks with titles, descriptions, p
 - [Tailwind](https://tailwindcss.com)
 
 ## Prerequisites
-- PHP >= 8.2, Composer
+- PHP >= 8.3, Composer
 - Node.js >= 20, npm
 - Database (MySQL/PostgreSQL/SQLite)
 - OpenSSL, ext-zip, and common PHP extensions
